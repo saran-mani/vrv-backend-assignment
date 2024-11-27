@@ -29,10 +29,10 @@ app.use(helmet());
 app.use(morgan("dev"));
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://vrv-assignment.netlify.app"],
+    origin: ["https://vrv-assignment.netlify.app", "http://localhost:5173"],
     optionsSuccessStatus: 200,
-    methods: 'GET,POST,PATCH,DELETE',
-    credentials: true,
+    methods: "GET,POST,PATCH,DELETE",
+    allowedHeaders: "Content-Type,Authorization",
   })
 );
 
