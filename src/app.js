@@ -30,7 +30,9 @@ app.use(morgan("dev"));
 app.use(
   cors({
     origin: ["http://localhost:5173", "https://vrv-assignment.netlify.app"],
-    optionsSuccessStatus: 200
+    optionsSuccessStatus: 200,
+    methods: 'GET,POST,PATCH,DELETE',
+    credentials: true,
   })
 );
 
