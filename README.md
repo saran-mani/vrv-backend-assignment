@@ -5,6 +5,9 @@
 This is a blog application that allows users to sign up, log in, and view blogs related to technology and cybersecurity. The application features user authentication, protected routes, and dynamic blog rendering. Built using React, it integrates with an API for user authentication and blog management.
 
 ---
+**PROJECT LIVE URL**
+https://vrv-assignment.netlify.app/
+
 **FRONTEND GITHUB:**
 https://github.com/saran-mani/vrv-frontend-assignment.git
 
