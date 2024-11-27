@@ -27,9 +27,11 @@ app.use(
 );
 app.use(helmet());
 app.use(morgan("dev"));
-app.use(cors({
-  origin:"http://localhost:5173"
-}));
+app.use(
+  cors({
+    origin: ["http://localhost:5173", "https://vrv-assignment.netlify.app"],
+  })
+);
 
 app.use("/api/v1/user", userRoutes);
 app.use("/api/v1/blog", blogRoutes);
